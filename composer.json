@@ -19,7 +19,9 @@
         "laravel/socialite": "^5.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^3.0",
-        "laravelcollective/html": "^6.2"
+        "laravelcollective/html": "^6.2",
+        "socialiteproviders/github": "^4.0",
+        "socialiteproviders/google": "^4.0"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

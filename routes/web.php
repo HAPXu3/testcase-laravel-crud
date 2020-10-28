@@ -22,3 +22,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('posts', App\Http\Controllers\PostController::class);
+
+Route::get('/login-google', function () {
+    return Socialite::driver('google')->redirect();
+});
+
+Route::get('/login-google-success', [App\Http\Controllers\Auth\LoginGoogleController::class, 'login']);
