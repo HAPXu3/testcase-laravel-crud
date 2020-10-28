@@ -20,6 +20,7 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
+    use RedirectToPosts;
 
     /**
      * Where to redirect users after login.
