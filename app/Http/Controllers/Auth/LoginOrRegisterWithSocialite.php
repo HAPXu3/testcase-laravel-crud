@@ -23,7 +23,7 @@ trait LoginOrRegisterWithSocialite
         } else {
             $newUser = new User([
                 'email' => $user->email,
-                'name' => $user->name,
+                'name' => $user->name ?? $user->nickname ?? $user->email,
                 'password' => Str::random(),
             ]);
             $newUser->save();
