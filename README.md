@@ -15,3 +15,21 @@ GITHUB_CLIENT_ID
 GITHUB_CLIENT_SECRET
 GITHUB_REDIRECT_URI
 ```
+
+### Установка
+Клонировать репозиторий
+```
+git clone https://github.com/HAPXu3/testcase-laravel-crud.git <destination path>
+```
+Установить зависимости
+```
+composer install
+```
+Создать .env и заполнить необходимые поля
+```
+cp .env.example .env
+```
+Запустить миграции
+```
+php artisan migrate
+```
