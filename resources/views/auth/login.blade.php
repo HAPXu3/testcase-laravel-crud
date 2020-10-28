@@ -77,6 +77,8 @@
                 <div class="col-xs-4">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
                 </div>
+                <div class="col-md-12"> <a class="btn btn-google btn-block text-uppercase btn-outline" href="/login-google"><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Signup Using Google</a> </div>
+                <div class="col-md-12" style="margin-top: 10px"> <a class="btn btn-github btn-block text-uppercase btn-outline" href="/login-github"> Signup Using GitHub</a> </div>
                 <!-- /.col -->
             </div>
         </form>
