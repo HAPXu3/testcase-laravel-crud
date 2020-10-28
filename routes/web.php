@@ -28,3 +28,9 @@ Route::get('/login-google', function () {
 });
 
 Route::get('/login-google-success', [App\Http\Controllers\Auth\LoginGoogleController::class, 'login']);
+
+Route::get('/login-github', function () {
+    return Socialite::driver('github')->redirect();
+});
+
+Route::get('/login-github-success', [App\Http\Controllers\Auth\LoginGithubController::class, 'login']);
